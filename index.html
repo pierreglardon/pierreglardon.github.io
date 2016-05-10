@@ -3,28 +3,103 @@
     <head>
         <meta charset="UTF-8">
         <title>Pierre Glardon - Portfolio</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="js/pierreglardon.js"></script>
+        <!-- scroll magic -->
+        <script type="text/javascript" src="js/scrollmagic/TweenMax.min.js"></script>
+    	<script type="text/javascript" src="js/scrollmagic/ScrollMagic.min.js"></script>
+        <script type="text/javascript" src="js/scrollmagic/animation.gsap.min.js"></script>
+    	<script type="text/javascript" src="js/scrollmagic/debug.addIndicators.min.js"></script>
+
+
     </head>
     <body>
-
-        <div class="wrapper">
-            <ul id="scene" class="scene">
-                <li class="layer" data-depth="0.15">
-                    <div class="background"></div>
-                </li>
-                <li class="layer" data-depth="0.30">
-                    <div class="noise"></div>
-                </li>
-            </ul>
-        </div>
+        <header>
+            <section>
+                <a href="#home">Pierre Glardon</a>
+            </section>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home" class="navlink l1">Accueil</a></li>
+                    <li><a href="#aboutme" class="navlink l2">À propos de moi</a></li>
+                    <li><a href="#portfolio" class="navlink l3">Portfolio</a></li>
+                    <!-- <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+        </header>
+        <section id="home">
+            <div class="wrapper">
+                <ul id="scene" class="scene">
+                    <li class="layer" data-depth="0.10">
+                        <div class="background"></div>
+                    </li>
+                    <li class="layer" data-depth="0.25">
+                        <div class="noise"></div>
+                    </li>
+                    <li class="layer content" data-depth="0.40">
+                        <section>
+                            <h1>Pierre Glardon</h1>
+                            <h2>Webdesigner</h2>
+                            <div>
+                                <a href="http://twitter.com/pierre_glardon">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="aboutme">
+            <aside id="portrait" class="portrait">
+                <div>
+                    <img src="img/test-portrait.jpg" alt="" />
+                </div>
+            </aside>
+            <aside>
+                <section>
+                    <h3>Bonjour,</h3>
+                    <p>Je suis Pierre, j'ai 22 ans et suis webdesigner.</p>
+                    <p>Passionné par le web depuis mon enfance, c'est très logiquement que je me suis orienté vers le webdesign.</p>
+                    <p>J'ai étudié à l'école d'art MJM Strasbourg.</p>
+                    <p> Un projet ? Contactez-moi : <a href="mailto:hello@pierreglardon.fr">hello@pierreglardon.fr</a></p>
+                </section>
+            </aside>
+        </section>
+        <section id="portfolio">
+            <h3>Portfolio</h3>
+            <div class="listing">
+                <article>
+                    <img src="http://jkeyshare.com/wp-content/uploads/2016/02/Salient-Responsive-Multi-Purpose-Theme.jpg" />
+                    <section>
+                        <h4>Titre du projet</h4>
+                    </section>
+                </article>
+                <article>
+                    <img src="http://jkeyshare.com/wp-content/uploads/2016/02/Salient-Responsive-Multi-Purpose-Theme.jpg" />
+                    <section>
+                        <h4>Titre du projet</h4>
+                    </section>
+                </article>
+                <article>
+                    <img src="http://jkeyshare.com/wp-content/uploads/2016/02/Salient-Responsive-Multi-Purpose-Theme.jpg" />
+                    <section>
+                        <h4>Titre du projet</h4>
+                    </section>
+                </article>
+                <article>
+                    <img src="http://jkeyshare.com/wp-content/uploads/2016/02/Salient-Responsive-Multi-Purpose-Theme.jpg" />
+                    <section>
+                        <h4>Titre du projet</h4>
+                    </section>
+                </article>
+            </div>
+        </section>
 
         <!-- JS -->
-        <script src="js/parallax.js"></script>
-        <script>
-            var scene = document.getElementById('scene');
-            var parallax = new Parallax(scene);
-        </script>
-
+        <script src="js/parallax-matthew.min.js"></script>
+        <script src="js/scrollmagic/ScrollToPlugin.min.js"></script>
     </body>
 </html>

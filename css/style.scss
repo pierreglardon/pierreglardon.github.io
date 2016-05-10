@@ -1,48 +1,309 @@
 @import "reset.css";
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400,700|Raleway:100,200);
 
 body {
-    background:#212121;
-    .wrapper {
-        text-align: center;
-        position: absolute;
-        overflow: hidden;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        .scene {
-            position:relative;
-            display: block;
-            height: 100%;
+    background:#1B1B1B;
+    font-family:"Open sans", sans-serif;
+    font-size:14px;
+    header {
+        position:fixed;
+        z-index: 100;
+        width:100%;
+        left:0;
+        right:0;
+        padding:30px 50px 0;
+        box-sizing: border-box;
+        line-height:30px;
+        section {
+            float:left;
+            text-transform: uppercase;
+            display:inline-block;
+            a {
+                font-size:1.2rem;
+                text-decoration: none;
+                color:#fff;
+                letter-spacing: 1px;
+                font-weight:bold;
+                opacity: 1;
+                transition:opacity ease 0.2s;
+                &:hover {
+                    opacity:0.7;
+                }
+            }
+        }
+        nav.navigation {
+            float:right;
+            display:inline-block;
+            ul {
+                li {
+                    display:inline-block;
+                    margin-left:20px;
+                    &:first-of-type {
+                        margin-left:0;
+                    }
+                    a {
+                        text-decoration: none;
+                        color:#fff;
+                        text-transform: uppercase;
+                        font-size:0.9rem;
+                        letter-spacing: 0.4px;
+                        opacity: 1;
+                        transition:opacity ease 0.2s;
+                        display:block;
+                        position:relative;
+                        &::after {
+                            position:absolute;
+                            width:0;
+                            background:#fff;
+                            width:0px;
+                            height:3px;
+                            transition:width ease 0.2s;
+                            content:"";
+                            display:block;
+                            z-index: -1;
+                        }
+                        &:hover {
+                            opacity:0.7;
+                            &::after {
+                                width:100%;
+                            }
+                        }
+                        &.active {
+                            &::after {
+                                position:absolute;
+                                width:0;
+                                background:#fff;
+                                width:100%;
+                                height:3px;
+                                transition:width ease 0.2s;
+                                content:"";
+                                display:block;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #home {
+        .wrapper {
+            z-index: 1;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
             width: 100%;
-            padding: 0;
-            margin: 0;
-            .layer {
+            left: 0;
+            top: 0;
+            .scene {
+                position:relative;
                 display: block;
                 height: 100%;
                 width: 100%;
                 padding: 0;
                 margin: 0;
-                .background {
-                    background: url(../img/background.jpg) no-repeat 50% 100%;
-                    background-size: cover;
-                    position: absolute;
-                    width: 110%;
-                    left: -5%;
-                    top: -5%;
-                    bottom: -20px;
-                }
-                .noise {
-                    background: url(../img/noise.png) repeat 50% 100%;
-                    position: absolute;
-                    width: 110%;
-                    left: -5%;
-                    top: -5%;
-                    bottom: -20px;
-                    opacity: 0.75;
+                .layer {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    .background {
+                        background: url(../img/background.jpg) no-repeat 50% 100%;
+                        background-size: cover;
+                        position: absolute;
+                        width: 110%;
+                        left: -5%;
+                        top: -5%;
+                        bottom: -20px;
+                    }
+                    .noise {
+                        background: url(../img/noise.png) repeat 50% 100%;
+                        position: absolute;
+                        width: 110%;
+                        left: -5%;
+                        top: -5%;
+                        bottom: -20px;
+                        opacity: 0.75;
+                    }
+                    &.content {
+                        section {
+                            position: absolute;
+                            left:0;
+                            right:0;
+                            top:50%;
+                            transform: translateY(-50%);
+                            padding:30px;
+                            border:6px solid #fff;
+                            max-width:400px;
+                            margin:auto;
+                            color:#fff;
+                            box-sizing: border-box;
+                            h1 {
+                                font-size:1.5rem;
+                                font-weight:bold;
+                                line-height:1.5;
+                                margin-bottom: 14px;
+                            }
+                            h2 {
+                                font-size: 1.3rem;
+                                text-transform: uppercase;
+                                line-height:1.5;
+                                margin-bottom: 14px;
+                            }
+                            div {
+                                a {
+                                    color:#fff;
+                                    font-size:1.2rem;
+                                    opacity: 1;
+                                    transition:opacity ease 0.2s;
+                                    &:hover {
+                                        opacity:0.7;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
-
+    }
+    #aboutme {
+        &:after {
+            clear:both;
+            content:"";
+            display:block;
+        }
+        aside {
+            height:100vh;
+            position:relative;
+            box-sizing: border-box;
+            float:left;
+            width:60%;
+            &.portrait {
+                width:40%;
+                overflow:hidden;
+                height:100vh;
+                div {
+                    height: 550px;
+                    width: 300px;
+                    overflow: hidden;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    img {
+                        height:100%;
+                    }
+                }
+            }
+            section {
+                color:#fff;
+                position:relative;
+                top:50%;
+                transform: translateY(-50%);
+                padding:50px;
+                line-height:2;
+                h3 {
+                    font-size:3rem;
+                    font-family:serif;
+                    line-height: 1.2;
+                }
+                p {
+                    font-size:1.4rem;
+                    a {
+                        color:#fff;
+                        display:inline-block;;
+                        position:relative;
+                        transition:color ease 0.3s, padding ease 0.3s;
+                        padding:0px 0px;
+                        &::after {
+                            position:absolute;
+                            content:"";
+                            left:0;
+                            width:0px;
+                            background:#fff;
+                            height:100%;
+                            transition:width ease 0.3s;
+                            z-index: -1;
+                        }
+                        &:hover {
+                            color:#3C3C3C;
+                            padding:0px 10px;
+                            &::after {
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #portfolio {
+        h3 {
+            font-size:2rem;
+            letter-spacing:2px;
+            text-align:center;
+            color:#fff;
+            font-weight:bold;
+            text-transform: uppercase;
+            padding:150px 0;
+        }
+        .listing {
+            overflow-x: hidden;
+            overflow-y: auto;
+            article {
+                height:250px;
+                overflow: hidden;
+                position:relative;
+                &::after {
+                    content:"";
+                    display:block;
+                    width:100%;
+                    height:100%;
+                    position: absolute;
+                    background:#000;
+                    top:0;
+                    opacity:0.7;
+                    transition:opacity ease 0.2s;
+                }
+                img {
+                    z-index: 0;
+                    width:100%;
+                    min-height:250px;
+                }
+                section {
+                    z-index: 1;
+                    position:absolute;
+                    height:250px;
+                    overflow:hidden;
+                    top:0;
+                    left:0;
+                    right:0;
+                    box-sizing: border-box;
+                    color:#fff;
+                    line-height:250px;
+                    opacity:0.4;
+                    transition:opacity ease 0.2s;
+                    h4 {
+                        font-size:2rem;
+                        text-align:center;
+                        font-family: Raleway;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                        letter-spacing:1px;
+                        transition:letter-spacing ease 0.2s;
+                    }
+                }
+                &:hover {
+                    &::after {
+                        opacity:0.55;
+                    }
+                    section {
+                        opacity:1;
+                    }
+                }
+            }
+        }
     }
 }
