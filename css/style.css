@@ -16,7 +16,7 @@ body {
     @media only screen and (max-width: 768px) {
       body header {
         padding: 30px;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.4);
         height: 92px; } }
     body header section {
       float: left;
@@ -96,7 +96,7 @@ body {
         text-align: right;
         right: 0;
         width: 200px;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.4);
         padding: 10px;
         top: 62px; }
         body header nav.navigationMobile ul li {
@@ -130,11 +130,11 @@ body {
               width: 0;
               background: #fff;
               width: 100%;
-              height: 3px;
+              height: 2px;
               transition: width ease 0.2s;
               content: "";
               display: block;
-              z-index: -1; }
+              z-index: 1; }
   body.project-active {
     overflow: hidden; }
     body.project-active header nav.navigation {
@@ -153,7 +153,7 @@ body {
         height: 640px; } }
     @media only screen and (max-width: 480px) {
       body #home .wrapper {
-        height: 440px; } }
+        height: 600px; } }
     body #home .wrapper .scene {
       position: relative;
       display: block;
