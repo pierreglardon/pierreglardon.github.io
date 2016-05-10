@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
     // responsive menu
     var mobileMenu  = $('nav.navigationMobile ul'),
-    var mobileMenuLink  = $('nav.navigationMobile ul li a'),
+        mobileMenuLink  = $('nav.navigationMobile ul li a'),
         openMenu    = $('nav.navigationMobile .openMenu');
     openMenu.click(function() {
         mobileMenu.slideToggle();
