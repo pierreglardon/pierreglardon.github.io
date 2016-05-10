@@ -15,7 +15,9 @@ body {
         box-sizing: border-box;
         line-height:30px;
         @media only screen and (max-width: 768px) {
-        padding:30px 30px 0;
+            padding:30px;
+            background:rgba(0,0,0,0.2);
+            height:92px;
         }
         section {
             float:left;
@@ -111,6 +113,9 @@ body {
                 text-align: right;
                 right:0;
                 width:200px;
+                background: rgba(0, 0, 0, 0.2);
+                padding: 10px;
+                top:62px;
                 li {
                     display:block;
                     a {
