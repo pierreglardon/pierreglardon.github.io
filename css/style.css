@@ -248,7 +248,7 @@ body {
           transform: translateX(-50%); }
           @media only screen and (max-width: 768px) {
             body #aboutme aside.portrait div {
-              margin-top: -40%; } }
+              margin-top: -50%; } }
           body #aboutme aside.portrait div img {
             height: 100%; }
       body #aboutme aside section {
