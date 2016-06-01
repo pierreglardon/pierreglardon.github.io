@@ -386,6 +386,7 @@ body {
         .listing {
             overflow-x: hidden;
             overflow-y: auto;
+            padding-bottom:30px;
             article {
                 max-height:250px;
                 overflow: hidden;
@@ -402,7 +403,7 @@ body {
                     top:0;
                     left:0;
                     right:0;
-                    height:250px;
+                    height:350px;
                     width:100%;
                     background:#000;
                     opacity:0;
@@ -413,11 +414,11 @@ body {
                     width:100%;
                 }
                 h4 {
-                z-index: 2;
+                    z-index: 2;
                     position:absolute;
                     top:0;
                     width:100%;
-                    line-height:250px;
+                    line-height:350px;
                     color:#fff;
                     font-size:2rem;
                     text-align:center;
@@ -439,8 +440,9 @@ body {
                     height:100%;
                 }
                 &:hover {
+                    max-height:350px;
                     &::after {
-                        opacity:0.6;
+                        opacity:0.8;
                     }
                     h4 {
                         opacity: 1;

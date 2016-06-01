@@ -5,6 +5,7 @@
         <title>Pierre Glardon - Travaux</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+        <link href="../lightbox/css/lightbox.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="../js/pierreglardon.js"></script>
@@ -13,7 +14,6 @@
     	<script type="text/javascript" src="../js/scrollmagic/ScrollMagic.min.js"></script>
         <script type="text/javascript" src="../js/scrollmagic/animation.gsap.min.js"></script>
     	<script type="text/javascript" src="../js/scrollmagic/debug.addIndicators.min.js"></script>
-
     </head>
     <body class="project">
         <header>
@@ -42,27 +42,37 @@
             <div class="wrapper">
                 <ul id="scene" class="scene">
                     <li class="layer" data-depth="0.10">
-                        <div class="background"></div>
+                        <img src="toptencomics/home.jpg" class="bg" />
                     </li>
                     <li class="layer" data-depth="0.25">
                         <div class="noise"></div>
                     </li>
-                    <li class="layer content" data-depth="0.40">
+                    <li class="layer content" data-depth="0.50">
                         <section>
-                            <h1>Nom du project</h1>
+                            <h1>Top Ten Comics</h1>
                         </section>
                     </li>
                 </ul>
             </div>
         </section>
         <section id="project">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, molestiae. Soluta placeat laborum praesentium? Fugiat inventore asperiores vitae, optio vel dolorum veniam mollitia magnam velit in quos commodi repellendus a.</p>
-            <img src="http://jkeyshare.com/wp-content/uploads/2016/02/Salient-Responsive-Multi-Purpose-Theme.jpg" class="img-project" />
-            <img src="http://jkeyshare.com/wp-content/uploads/2016/02/Salient-Responsive-Multi-Purpose-Theme.jpg" class="img-project" />
+            <p>Top Ten Comics est un nouveau magasin de Bande dessinées spécialisé dans le Comics US en Version originale vient d’ouvrir à Strasbourg. Afin de guider ses clients dans leurs achats, il souhaiterait proposer un site internet avec un outil de gestion de collection personnelle.</p>
+            <p>Tâches effectués : maquette et intégration sous Wordpress. HTML, CSS et JS.</p>
+            <p>Projet en groupe avec Di Blasi Maxence et Vix Romane.</p>
+            <p>Exercice donné par l'école.</p>
+            <a href="toptencomics/home.jpg" data-lightbox="toptencomics" data-title="Page d'accueil" class="img-project"><img src="toptencomics/home.jpg" /></a>
+            <a href="toptencomics/home-hover.jpg" data-lightbox="toptencomics" data-title="Page d'accueil avec hover" class="img-project"><img src="toptencomics/home-hover.jpg" /></a>
+            <a href="toptencomics/user.jpg" data-lightbox="toptencomics" data-title="Page compte utilisateur" class="img-project"><img src="toptencomics/user.jpg" /></a>
+            <a href="toptencomics/single.jpg" data-lightbox="toptencomics" data-title="Page d'un exemplaire de comics" class="img-project"><img src="toptencomics/single.jpg" /></a>
+            <a href="toptencomics/series.jpg" data-lightbox="toptencomics" data-title="Page d'une serie d'un comics" class="img-project"><img src="toptencomics/series.jpg" /></a>
+            <a href="toptencomics/single.jpg" data-lightbox="toptencomics" data-title="Page d'un exemplaire de comics" class="img-project"><img src="toptencomics/single.jpg" /></a>
+            <a href="toptencomics/search.jpg" data-lightbox="toptencomics" data-title="Page de recherche" class="img-project"><img src="toptencomics/search.jpg" /></a>
         </section>
 
         <!-- JS -->
         <script src="../js/parallax-matthew.min.js"></script>
         <script src="../js/scrollmagic/ScrollToPlugin.min.js"></script>
+        <script src="../lightbox/js/lightbox.js"></script>
+        <script src="js/lightbox.js"></script>
     </body>
 </html>
