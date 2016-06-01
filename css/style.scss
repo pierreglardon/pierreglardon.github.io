@@ -388,7 +388,8 @@ body {
             overflow-y: auto;
             padding-bottom:30px;
             article {
-                max-height:250px;
+                height:250px;
+                margin:50px;
                 overflow: hidden;
                 position:relative;
                 cursor:pointer;
@@ -403,7 +404,7 @@ body {
                     top:0;
                     left:0;
                     right:0;
-                    height:350px;
+                    height:250px;
                     width:100%;
                     background:#000;
                     opacity:0;
@@ -412,13 +413,15 @@ body {
                 img {
                     z-index: 0;
                     width:100%;
+                    margin-top:0;
+                    transition:all linear 10s;
                 }
                 h4 {
                     z-index: 2;
                     position:absolute;
                     top:0;
                     width:100%;
-                    line-height:350px;
+                    line-height:250px;
                     color:#fff;
                     font-size:2rem;
                     text-align:center;
@@ -440,12 +443,16 @@ body {
                     height:100%;
                 }
                 &:hover {
-                    max-height:350px;
+                    max-height:250px;
                     &::after {
                         opacity:0.8;
                     }
                     h4 {
                         opacity: 1;
+                    }
+                    img {
+                        transform: translateY(-100%);
+                        margin-top: 250px;
                     }
                 }
             }
@@ -484,6 +491,22 @@ body {
                     display:inline-block;;
                 }
             }
+        }
+    }
+    footer {
+        width:100%;
+        padding:2% 50px;
+        background:rgba(0,0,0,0.5);
+        text-align:center;
+        font-size:11px;
+        box-sizing: border-box;
+        color:#fff;
+        letter-spacing: 1px;
+        a {
+            color:#fff;
+            text-decoration:none;
+            text-transform: uppercase;
+            margin:0 10px;
         }
     }
 }
