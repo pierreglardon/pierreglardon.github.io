@@ -392,6 +392,9 @@ body {
                 position:relative;
                 cursor:pointer;
                 transition:all ease 0.2s;
+                a {
+                    text-decoration: none;
+                }
                 &::after {
                     z-index: 1;
                     content:"";
@@ -471,7 +474,7 @@ body {
             }
             .img-project {
                 max-width:70%;
-                margin:auto;
+                margin:5% auto 10%;
                 display:block;
                 text-align:center;
                 img {
