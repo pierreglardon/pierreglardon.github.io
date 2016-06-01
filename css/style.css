@@ -175,6 +175,14 @@ body {
           left: -5%;
           top: -5%;
           bottom: -20px; }
+        body #home .wrapper .scene .layer img.bg {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          max-width: 110%;
+          opacity: 0.2;
+          transform: translateX(-5%); }
         body #home .wrapper .scene .layer .noise {
           background: url(../img/noise.png) repeat 50% 100%;
           position: absolute;
@@ -363,17 +371,23 @@ body {
         opacity: 0.6; }
       body #portfolio .listing article:hover h4 {
         opacity: 1; }
-  body.project #home .wrapper .scene .layer.content section h1 {
-    margin-bottom: 0; }
+  body.project #home .wrapper {
+    height: 50vh; }
+    body.project #home .wrapper .scene .layer.content section h1 {
+      margin-bottom: 0; }
   body.project #project p {
     color: #ffffff;
     font-size: 1rem;
-    margin: 8% auto;
+    margin: 5% auto;
     line-height: 1.5;
     max-width: 70%; }
   body.project #project .img-project {
     max-width: 70%;
+    margin: auto;
     display: block;
-    margin: 5% auto; }
+    text-align: center; }
+    body.project #project .img-project img {
+      max-width: 100%;
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
